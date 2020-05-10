@@ -1,4 +1,4 @@
-# trajectory-of-comet
+# path-of-comet
 Simulation of path of an especific comet in C and MPI
 
 Generally speaking, a comet is a celestial body composed mainly of solid matter like ice with organic resting material, dust and rocks. They can have elliptical, parabolic, or hyperbolic orbits, but the most common in the solar system are the elliptical orbits.
