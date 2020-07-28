@@ -57,13 +57,13 @@ int main(int argn, char **args){
   double d = 86400.0; // seg
   Ax= -10.0*au; //metros
   Bx= 10.0*au;
-  Ay= -10.0*au;
-  By= 10.0*au;
-  Az= -10.0*au;
-  Bz= 10.0*au;
+  Ay= -20.0*au;
+  By= 20.0*au;
+  Az= -15.0*au;
+  Bz= 0.5*au;
   radii=1.0;
-  dt=50; //sec
-  steps=100;
+  dt=0.5; //sec
+  steps=10;
 
 
   
@@ -81,11 +81,17 @@ ro de procesos */
   
   // Initial Conditions
   population = new_Population("Sun-comet system",N); // efemeride 1998 mar 15
-  // add_element_to_population(&population, new_Element(1.0e9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0));  
-  // add_element_to_population(&population, new_Element(1.0e11, 10.0, 10.0,10.0, -1.0, 0., 0.0));
-  // add_element_to_population(&population, new_Element(1.0e9, -10.0, -10.0,-10.0, 0.8, 0.8, 0.8));  
+  // add_element_to_population(&population, new_Element(1.e9, -10.0, -10.0,-10.0, 0.8, 0.8, 0.8));  
   add_element_to_population(&population, new_Element(1.989e30, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0));  // sol en el centro del sistema
-  add_element_to_population(&population, new_Element(2.2e14, -3.135*au, 0.955*au, 0.183*au, -1.37e-3*(au/d), -9.20e-3*(au/d), 1.37e-4*(au/d)));  // halley con corrdenadas heliocentricas
+  add_element_to_population(&population, new_Element(2.2e14, -3.135*au, 0.955*au, 0.183*au, -1.37e-3*(au), -9.20e-3*(au), 1.37e-4*(au)));  // halley con coordenadas heliocentricas
+  add_element_to_population(&population, new_Element(1.898e27, 4.58*au, -2.008*au, -0.094*au, 0.00293*(au), 0.00727*(au), -9.57e-5*(au)));  // jupiter
+  add_element_to_population(&population, new_Element(5.683e26, 8.636*au, 3.550*au, -0.405*au, -2.41e-3*(au), 5.15e-3*(au), 6.48e-6*(au)));  // saturno
+  add_element_to_population(&population, new_Element(1.024e26, 15.07*au, -26.10*au, 0.189*au, 2.70e-3*(au), 1.59e-3*(au), -9.47e-5*(au)));  // neptuno
+  add_element_to_population(&population, new_Element(8.681e25, 12.55*au, -15.37*au, -0.219*au, -3.02e-3*(au), 2.31e-3*(au), -3.07e-5*(au)));  // urano
+  add_element_to_population(&population, new_Element(5.972e24, -0.98*au, -0.099*au, -4.68e-7*au, -2.015e-3*(au), -1.71e-2*(au), -6.05e-7*(au)));  // tierra
+  add_element_to_population(&population, new_Element(4.867e24, -0.628*au, -0.354*au, 3.14e-2*au, 9.78e-3*(au), -1.77e-2*(au), -8.06e-4*(au)));  // venus
+  add_element_to_population(&population, new_Element(6.39e23, 1.345*au, 0.428*au, -2.40e-2*au, -3.706e-3*(au), -1.45e-2*(au), 3.95e-4*(au)));  // marte
+  add_element_to_population(&population, new_Element(3.285e23, 3.43*au, 0.305*au, 2.177e-2*au, -3.36e-2*(au), 4.179e-3*(au), 3.45e-3*(au)));  // mercurio
 
 
 

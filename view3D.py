@@ -41,6 +41,7 @@ ax = fig.add_subplot(111, projection='3d')
 iterator = 0
 new_sick_vector = []
 bar_x=[]
+labels = ['Sun', 'Halley', 'Jupiter', 'Saturn', 'Neptune', 'Uranus', 'Earth', 'Venus', 'Mars', 'Mercury']
 
 for line in data[1:]:
     if "#" in line[0]:
@@ -65,4 +66,5 @@ for line in data[1:]:
 
     if (iterator == npeople):
         plt.draw()
+        plt.legend(labels[:npeople], loc='upper left')
         fig.savefig("data/"+("%08d"%iteration)+"-view3D.png")
