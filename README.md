@@ -39,5 +39,6 @@ To run main.c it is necessary to download the full git and follow these steps:
 The result is in *output.dat* file generated when running main. In the following links there is a video in which you can see the results of 2 simulations different.
 
 [Sun and Halley](https://drive.google.com/file/d/1-8b9hEDP-P7key8j2RUkyfi60CnNfXz8/view?usp=sharing)
+
 [Solar system and Halley](https://drive.google.com/file/d/1sMrY7uikySPxscVMTttsb_Zr8TpHq27y/view?usp=sharing)
 
