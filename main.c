@@ -26,7 +26,7 @@
 #include "integrator.h"
 
 int main(int argn, char **args){
-  int N = 8;
+  int N = 10;
   Element a1,a2;
   Population population;
   double *distance;
@@ -63,7 +63,7 @@ int main(int argn, char **args){
   Bz= 0.5*au;
   radii=1.0;
   dt=0.5; //sec
-  steps=10;
+  steps=500;
 
 
   
