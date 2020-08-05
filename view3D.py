@@ -41,7 +41,8 @@ ax = fig.add_subplot(111, projection='3d')
 iterator = 0
 new_sick_vector = []
 bar_x=[]
-labels = ['Sun', 'Halley', 'Jupiter', 'Saturn', 'Neptune', 'Uranus', 'Earth', 'Venus', 'Mars', 'Mercury']
+labels = ['Sun', 'Jupiter', 'Saturn', 'Neptune', 'Uranus', 'Earth', 'Venus', 'Mars', 'Mercury', 'Halley']
+area = [100, 69, 58, 24, 25, 6, 6, 3, 2, 1] #km
 
 for line in data[1:]:
     if "#" in line[0]:
@@ -58,13 +59,14 @@ for line in data[1:]:
         mass=float(mass)
         x,y,z = position.split(",")
         x = float(x)
-        y=float(y)
-        z=float(z)
-        ax.scatter(x, y, z)
+        y = float(y)
+        z = float(z)
+        ax.scatter(x, y, z, s=area[iterator], marker='o')
         
         iterator = iterator + 1
 
     if (iterator == npeople):
         plt.draw()
         plt.legend(labels[:npeople], loc='upper left')
-        fig.savefig("data/"+("%08d"%iteration)+"-view3D.png")
+        fig.savefig("Data/"+("%08d"%iteration)+"-view3D.png")
+        # fig.savefig(("%08d"%iteration)+"-view3D.png")
