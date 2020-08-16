@@ -7,14 +7,15 @@ Generally speaking, a comet is a celestial body composed mainly of solid matter 
 The study of the trajectories of a comet date back to the 16th century, when Edmund Halley tried to calculate the trajectory of the comet that would later carry his lastname, using Newton's theory of gravitation as support. In this experiment he discovered that this orbit had a periodic behavior of 76, 77 years.
 Later in 1821, the German mathematician Johann Encke discovered another comet whose orbit was also periodic, with a period of 3.3 years
 
-I will focus on calculating the path of a specific comet, in this case, Halley Comet which is considered a young comet (P-AGE <30) and dwarf comet <1.5 km of diameter.
+I will focus on calculating the path of a specific comet, in this case, Halley Comet which is considered a young comet (P-AGE < 30) and dwarf comet < 1.5 km of diameter.
 The coordinate system will have the sun at the origin, that means, heliocentric coordinates will be used to calculate the orbit.
 As an ephemeris for this comet I will use the following date 03/15/1998.
 
-Ephemeris are available on [Horizons](https://ssd.jpl.nasa.gov/horizons.cgi)
+Ephemeries are available on [Horizons](https://ssd.jpl.nasa.gov/horizons.cgi)
 
 ## Objetive
-Simulate the orbit of Halley's Comet. Then simulate the trajectory of the planets of the solar system.
+- Simulate the orbit of Halley's Comet
+- Then simulate the trajectory of the planets of the solar system.
 
 
 ## Methodology
@@ -31,9 +32,17 @@ The number of graphs depends on the number of iterations that are indicate in th
 To run main.c it is necessary to download the full git and follow these steps:
 
 1. Run the GNUmakefile file with the following command *make* .
-2. Execute main with the following command *mpiexec -n 'number of processes to use' ./main> output.dat*. In this case I used 24 processes to speed up the calculation.
+2. Execute main with the following command *mpiexec -n 'number of processes to use' ./main > output.dat*. In this case I used 24 processes to speed up the calculation.
 3. The previous command returns a file called **output.dat** if you change the name of that file, you must put the same name on line 14 of view3D.py in addition to creating a folder called "data" to save the graphs.
 4. If you want to make a video with the graphs to see the change between them, you can enter [Gifmaker](https://gifmaker.me/).
+
+
+## Initial Conditions 
+The chosen date is march 15th 1998.
+Using that date, we have the following information:
+| Name | Mass | X | Y | Z | VX | VY | VZ |
+| -- | -- | -- | -- | -- | -- | -- | -- |
+| Sun | 1.989e30 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ## Results
 The result is in *output.dat* file generated when running main. In the following links there is a video in which you can see the results of 2 simulations different.
