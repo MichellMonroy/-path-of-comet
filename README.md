@@ -39,7 +39,7 @@ To run main.c it is necessary to download the full git and follow these steps:
 
 ## Initial Conditions 
 The chosen date is march 15th 1998.
-Using that date, we have the following information:
+Using that date, we have the following information with helicentric coordinates:
 | Name | Mass | X | Y | Z | VX | VY | VZ |
 | -- | -- | -- | -- | -- | -- | -- | -- |
 | Sun | 1.989e+30 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -50,7 +50,7 @@ Using that date, we have the following information:
 | Earth | 5.972e+24 | -9.892e-01 | 9.993e-02 | -4.685e-07 | -2.010e-03 | -1.717e-02 | -6.054e-07 |
 | Venus | 4.867e2+4 | -6.287e-01 | -3.540e-01 | 3.145e-02 | 9.783e-03 | -1.771e-02 | -8.067e-04 |
 | Mars |  6.39e+23 | 1.345e+00 | 4.282e-01 | -2.409e-02 | 3.706e-03 | 1.452e-02 | 3.954e-04 |
-| Mercury | 3.285e+23 | 3.430e-02 | 3.051e-01 | 2.177e-02 | -3.360e-02 | 4.179e-03   3.425e-03 |
+| Mercury | 3.285e+23 | 3.430e-02 | 3.051e-01 | 2.177e-02 | -3.360e-02 | 4.179e-03 | 3.425e-03 |
 | Haley | 2.2e14 | -3.135e+00 | 9.551e-01 | 1.833e-01 | -1.373e-03 | -9.206e-03 | 1.379e-04 |
 
 Is necessary to use Astronomical Unit (au) as metric in X, Y & Z and au/day in VX, VY & VZ where:
