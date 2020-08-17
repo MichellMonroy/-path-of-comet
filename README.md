@@ -57,6 +57,16 @@ Is necessary to use Astronomical Unit (au) as metric in X, Y & Z and au/day in V
 - au = 149,597,870.7 km
 - day = 86400.0 seconds
 
+The workspace is definited by the next data:
+- Ax = -10.0*au
+- Bx = 10.0*au
+- Ay = -20.0*au
+- By = 20.0*au
+- Az = -15.0*au
+- Bz = 0.5*au
+- Iterations = 500 This number can be changed according to experiment.
+The workspace is definited like that because it's easier show the movement of planets.
+
 ## Results
 The result is in *output.dat* file generated when running main. In the following links there is a video in which you can see the results of 2 simulations different.
 
