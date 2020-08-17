@@ -65,6 +65,7 @@ The workspace is definited by the next data:
 - Az = -15.0*au
 - Bz = 0.5*au
 - Iterations = 500 This number can be changed according to experiment.
+
 The workspace is definited like that because it's easier show the movement of planets.
 
 ## Results
