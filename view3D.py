@@ -35,14 +35,14 @@ Z = [[] for x in range(npeople)]
 C = [[] for x in range(npeople)]
 
 
-fig = plt.figure()
+fig = plt.figure(None, [10.8, 7.2])
 ax = fig.add_subplot(111, projection='3d')
 
 iterator = 0
 new_sick_vector = []
 bar_x=[]
 labels = ['Sun', 'Jupiter', 'Saturn', 'Neptune', 'Uranus', 'Earth', 'Venus', 'Mars', 'Mercury', 'Halley']
-area = [100, 69, 58, 24, 25, 6, 6, 3, 2, 1] #km
+area = [1000, 138, 116, 70, 80, 24, 24, 15, 10, 10] #1e+3km
 
 for line in data[1:]:
     if "#" in line[0]:
@@ -68,5 +68,6 @@ for line in data[1:]:
     if (iterator == npeople):
         plt.draw()
         plt.legend(labels[:npeople], loc='upper left')
-        fig.savefig("Data/"+("%08d"%iteration)+"-view3D.png")
-        # fig.savefig(("%08d"%iteration)+"-view3D.png")
+        fig.savefig("data/"+("%08d"%iteration)+"-view3D.png")
+        #fig.savefig(("%08d"%iteration)+"-view3D.png")
+

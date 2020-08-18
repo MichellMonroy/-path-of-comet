@@ -55,7 +55,7 @@ int main(int argn, char **args){
   double Ax,Bx,Ay,By,Az,Bz,radii;
   double au = 1.49597870700e8; //km
   double d = 86400.0; // seg
-  Ax= -10.0*au; //metros
+  Ax= -10.0*au; //km
   Bx= 10.0*au;
   Ay= -20.0*au;
   By= 20.0*au;
@@ -63,7 +63,7 @@ int main(int argn, char **args){
   Bz= 0.5*au;
   radii=1.0;
   dt=0.5; //sec
-  steps=500;
+  steps=1000;
 
 
   
