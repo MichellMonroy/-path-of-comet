@@ -80,5 +80,5 @@ The result is in *output.dat* file generated when running main. In the following
 
 [Solar system and Halley (scale)](https://drive.google.com/file/d/19i0Mjx8frIiA_XL1GTe7e5PMzH8Gi7KE/view?usp=sharing)
 
-[Solar system and Halley (scale #2)](https://drive.google.com/file/d/1kTFEhgKIXy7i9tTikerEXykxD5q0iVP3/view?usp=sharing)
+[Solar system and Halley (scale #2)](https://drive.google.com/file/d/19HqOB2-WbK6EBIlQXnWxLYUqPDUrbqSV/view?usp=sharing)
 
