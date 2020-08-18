@@ -72,7 +72,7 @@ The workspace is definited by the next data:
 The workspace is definited like that because it's easier show the movement of planets.
 
 ## Results
-The result is in *output.dat* file generated when running main. In the following links there is a video in which you can see the results of 2 simulations different.
+The result is in *output.dat* file generated when running main. In the following links there is a video in which you can see the results of 4 simulations different.
 
 [Sun and Halley](https://drive.google.com/file/d/1-8b9hEDP-P7key8j2RUkyfi60CnNfXz8/view?usp=sharing)
 
