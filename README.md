@@ -66,7 +66,7 @@ The workspace is definited by the next data:
 - By = 20.0*au
 - Az = -15.0*au
 - Bz = 0.5*au
-- Iterations = 500 This number can be changed according to experiment.
+- Iterations = 1000 This number can be changed according to experiment.
 
 The workspace is definited like that because it's easier show the movement of planets.
 
@@ -78,4 +78,6 @@ The result is in *output.dat* file generated when running main. In the following
 [Solar system and Halley](https://drive.google.com/file/d/1sMrY7uikySPxscVMTttsb_Zr8TpHq27y/view?usp=sharing)
 
 [Solar system and Halley (scale)](https://drive.google.com/file/d/19i0Mjx8frIiA_XL1GTe7e5PMzH8Gi7KE/view?usp=sharing)
+
+[Solar system and Halley (scale #2)](https://drive.google.com/file/d/1kTFEhgKIXy7i9tTikerEXykxD5q0iVP3/view?usp=sharing)
 
