@@ -35,6 +35,7 @@ To run main.c it is necessary to download the full git and follow these steps:
 2. Execute main with the following command *mpiexec -n 'number of processes to use' ./main > output.dat*. In this case I used 24 processes to speed up the calculation.
 3. The previous command returns a file called **output.dat** if you change the name of that file, you must put the same name on line 14 of view3D.py in addition to creating a folder called "data" to save the graphs.
 4. If you want to make a video with the graphs to see the change between them, you can enter [Gifmaker](https://gifmaker.me/).
+5. To join several videos (if it's necessary), you can enter [Clideo](https://clideo.com/es/editor/merge-video).
 
 
 ## Initial Conditions 
@@ -51,7 +52,7 @@ Using that date, we have the following information with helicentric coordinates:
 | Venus | 4.867e2+4 | -6.287e-01 | -3.540e-01 | 3.145e-02 | 9.783e-03 | -1.771e-02 | -8.067e-04 |
 | Mars |  6.39e+23 | 1.345e+00 | 4.282e-01 | -2.409e-02 | 3.706e-03 | 1.452e-02 | 3.954e-04 |
 | Mercury | 3.285e+23 | 3.430e-02 | 3.051e-01 | 2.177e-02 | -3.360e-02 | 4.179e-03 | 3.425e-03 |
-| Haley | 2.2e14 | -3.135e+00 | 9.551e-01 | 1.833e-01 | -1.373e-03 | -9.206e-03 | 1.379e-04 |
+| Haley | 2.2e+14 | -3.135e+00 | 9.551e-01 | 1.833e-01 | -1.373e-03 | -9.206e-03 | 1.379e-04 |
 
 Is necessary to use Astronomical Unit (au) as metric in X, Y & Z and au/day in VX, VY & VZ where:
 - au = 149,597,870.7 km
